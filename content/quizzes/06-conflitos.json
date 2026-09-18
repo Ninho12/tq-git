@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Em qual situação o Git gera obrigatoriamente um conflito de merge?",
+    "options": [
+      "Sempre que dois arquivos forem editados no mesmo dia",
+      "Quando duas branches modificam as mesmas linhas de um arquivo de maneiras diferentes",
+      "Quando o repositório atinge mais de 1.000 commits",
+      "Quando você tenta mesclar branches de autores com e-mails diferentes"
+    ],
+    "correct": 1,
+    "explanation": "O conflito surge porque o Git não pode adivinhar qual das duas alterações concorrentes nas mesmas linhas deve prevalecer."
+  },
+  {
+    "id": 2,
+    "question": "No marcador '<<<<<<< HEAD', qual conteúdo está representado imediatamente abaixo dele?",
+    "options": [
+      "O código da branch remota que acabou de ser baixada",
+      "O código original antes de qualquer modificação",
+      "O código que existia na branch local onde você está posicionado atualmente",
+      "O código sugerido pela inteligência artificial do Git"
+    ],
+    "correct": 2,
+    "explanation": "O cabeçalho HEAD representa o estado do arquivo na branch em que você se encontrava ao chamar o git merge."
+  },
+  {
+    "id": 3,
+    "question": "O que você deve fazer com os marcadores '<<<<<<<', '=======' e '>>>>>>>' após decidir o código final?",
+    "options": [
+      "Deixá-los comentados para documentação histórica",
+      "Substituí-los pela palavra 'RESOLVED'",
+      "Removê-los completamente dos arquivos antes de commitar",
+      "O Git remove-os sozinho no momento do git push"
+    ],
+    "correct": 2,
+    "explanation": "Os marcadores são apenas sinalizadores visuais temporários; eles devem ser 100% apagados para não quebrar a sintaxe do seu código."
+  },
+  {
+    "id": 4,
+    "question": "Como você sinaliza ao Git que um arquivo com conflito foi devidamente resolvido?",
+    "options": [
+      "Executando 'git add <arquivo>'",
+      "Executando 'git mark-resolved <arquivo>'",
+      "Renomeando o arquivo",
+      "Fechando o terminal e abrindo novamente"
+    ],
+    "correct": 0,
+    "explanation": "Executar 'git add <arquivo>' move o arquivo corrigido para a Staging Area, confirmando a resolução do conflito."
+  },
+  {
+    "id": 5,
+    "question": "Se durante a resolução de um conflito você perceber que algo deu errado e quiser cancelar toda a operação com segurança, qual comando usar?",
+    "options": [
+      "git cancel merge",
+      "git restore --all",
+      "git merge --abort",
+      "git delete HEAD"
+    ],
+    "correct": 2,
+    "explanation": "O comando 'git merge --abort' restaura com total segurança o estado anterior ao início da fusão."
+  }
+]

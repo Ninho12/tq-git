@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Qual comando guarda alterações não commitadas em uma área temporária, deixando o diretório de trabalho limpo?",
+    "options": [
+      "git save",
+      "git stash",
+      "git pause",
+      "git hold"
+    ],
+    "correct": 1,
+    "explanation": "O comando 'git stash' armazena as alterações pendentes em uma pilha segura para recuperação posterior."
+  },
+  {
+    "id": 2,
+    "question": "Qual é a diferença entre 'git stash pop' e 'git stash apply'?",
+    "options": [
+      "O 'pop' reaplica as alterações e as remove da pilha, enquanto o 'apply' reaplica mantendo a cópia salva no stash",
+      "O 'pop' só funciona no Linux e o 'apply' no Windows",
+      "O 'pop' exclui os arquivos permanentemente e o 'apply' recupera",
+      "Não há diferença entre eles"
+    ],
+    "correct": 0,
+    "explanation": "Com 'pop', a entrada do stash é descartada após a aplicação com sucesso; com 'apply', ela permanece na lista."
+  },
+  {
+    "id": 3,
+    "question": "Qual é o efeito principal do comando 'git rebase main' executado dentro de uma branch de feature?",
+    "options": [
+      "Apagar todos os commits da branch main",
+      "Reaplicar os commits da feature no topo do último commit da main, mantendo um histórico linear",
+      "Criar um commit de merge com 3 pais",
+      "Gerar um conflito automático obrigatório"
+    ],
+    "correct": 1,
+    "explanation": "O rebase move a base da sua branch de feature para a ponta atual da main, alinhando a história em linha reta."
+  },
+  {
+    "id": 4,
+    "question": "No rebase interativo ('git rebase -i'), o que faz o comando 'squash'?",
+    "options": [
+      "Apaga o commit completamente sem aviso",
+      "Combina o commit com o commit anterior, permitindo editar uma mensagem unificada",
+      "Converte o commit em uma tag",
+      "Envia o commit para o repositório remoto"
+    ],
+    "correct": 1,
+    "explanation": "'squash' (ou 's') mescla o commit selecionado com o anterior imediato na pilha de edição."
+  },
+  {
+    "id": 5,
+    "question": "Qual é a chamada 'Regra de Ouro' do Git Rebase?",
+    "options": [
+      "Sempre fazer rebase com acesso à internet ativo",
+      "Nunca fazer rebase em branches públicas/compartilhadas com outros desenvolvedores",
+      "Fazer rebase pelo menos uma vez por dia",
+      "Nunca utilizar rebase com arquivos em JavaScript"
+    ],
+    "correct": 1,
+    "explanation": "Rebase reescreve hashes e o passado; fazer isso em branches públicas que outros desenvolvedores usam destrói o histórico compartilhado."
+  }
+]

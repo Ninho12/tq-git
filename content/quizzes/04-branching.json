@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "O que é tecnicamente uma branch na arquitetura interna do Git?",
+    "options": [
+      "Uma cópia física completa de todos os arquivos do projeto em outra pasta",
+      "Um ponteiro móvel leve que referencia o hash de um commit específico",
+      "Um arquivo compactado .tar.gz contendo o código",
+      "Um branch de banco de dados SQL"
+    ],
+    "correct": 1,
+    "explanation": "No Git, uma branch é simplesmente uma referência móvel leve (um arquivo de texto simples na pasta .git/refs/heads) que aponta para o commit mais recente daquela linha."
+  },
+  {
+    "id": 2,
+    "question": "Qual é a função do ponteiro especial chamado HEAD no Git?",
+    "options": [
+      "Indicar o commit mais antigo de todo o repositório",
+      "Armazenar a senha do desenvolvedor",
+      "Apontar para a branch ou commit onde o diretório de trabalho está posicionado atualmente",
+      "Definir o branch que tem permissão de deploy em produção"
+    ],
+    "correct": 2,
+    "explanation": "O HEAD funciona como a 'cabeça de leitura/gravação', indicando em qual branch você está trabalhando no momento."
+  },
+  {
+    "id": 3,
+    "question": "Qual comando moderno cria uma nova branch e já alterna para ela simultaneamente?",
+    "options": [
+      "git branch --create-go <nome>",
+      "git switch -c <nome>",
+      "git init --branch <nome>",
+      "git move <nome>"
+    ],
+    "correct": 1,
+    "explanation": "O comando 'git switch -c <nome>' (introduzido no Git 2.23) cria a nova branch e posiciona o HEAD nela."
+  },
+  {
+    "id": 4,
+    "question": "Qual é a diferença entre 'git branch -d' e 'git branch -D'?",
+    "options": [
+      "O '-d' apaga branches remotas e o '-D' locais",
+      "O '-d' é uma deleção segura que impede apagar branches com alterações não mescladas, enquanto '-D' força a exclusão incondicional",
+      "O '-d' apaga apenas commits e o '-D' apaga os arquivos do disco",
+      "Ambos são exatamente idênticos, não há diferença prática"
+    ],
+    "correct": 1,
+    "explanation": "A flag '-d' protege o desenvolvedor contra perda acidental de trabalho não integrado; '-D' é um atalho para '--delete --force'."
+  },
+  {
+    "id": 5,
+    "question": "O que o comando 'git branch' executado sem nenhum argumento adicional faz?",
+    "options": [
+      "Cria uma nova branch chamada 'default'",
+      "Apaga todas as branches locais vazias",
+      "Lista todas as branches locais existentes, destacando com asterisco (*) a branch atual",
+      "Conecta o repositório com o GitHub"
+    ],
+    "correct": 2,
+    "explanation": "Executar 'git branch' sem argumentos lista as branches locais e coloca um asterisco verde ao lado da branch ativa apontada pelo HEAD."
+  }
+]

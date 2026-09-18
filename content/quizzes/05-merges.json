@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Antes de rodar 'git merge feature-x', em qual branch você deve estar posicionado?",
+    "options": [
+      "Na própria branch 'feature-x'",
+      "Na branch de destino (ex: 'main') que irá receber as alterações",
+      "Em qualquer branch temporária",
+      "Não importa, o Git pergunta no terminal"
+    ],
+    "correct": 1,
+    "explanation": "O comando 'git merge' puxa as alterações da branch informada para dentro da branch em que você está posicionado atualmente."
+  },
+  {
+    "id": 2,
+    "question": "Quando ocorre um merge do tipo 'Fast-Forward'?",
+    "options": [
+      "Quando há mais de 100 arquivos modificados",
+      "Quando o Git detecta conflitos em arquivos binários",
+      "Quando a branch de destino não teve nenhum commit novo desde que a branch de feature se separou dela",
+      "Quando o merge é executado com uma conexão de internet de alta velocidade"
+    ],
+    "correct": 2,
+    "explanation": "No Fast-Forward não há divergência de histórico, logo o Git apenas avança o ponteiro da branch de destino sem gerar commit extra."
+  },
+  {
+    "id": 3,
+    "question": "Quantos commits pais (parents) possui um commit gerado por um 'Three-Way Merge'?",
+    "options": [
+      "Nenhum, ele se torna a raiz do projeto",
+      "Apenas 1 commit pai",
+      "Exatamente 2 commits pais (as pontas de cada ramo integrado)",
+      "Pelo menos 4 commits pais"
+    ],
+    "correct": 2,
+    "explanation": "Um commit de merge comum une duas linhas de histórico, possuindo dois pais como referências diretas."
+  },
+  {
+    "id": 4,
+    "question": "Para que serve a flag '--squash' no comando 'git merge'?",
+    "options": [
+      "Para compactar as imagens do repositório",
+      "Para juntar todos os commits da branch integrada em um único conjunto de mudanças sem histórico intermediário",
+      "Para excluir a branch remota imediatamente",
+      "Para desfazer o último merge realizado"
+    ],
+    "correct": 1,
+    "explanation": "O '--squash' pega todas as alterações dos vários commits da branch de feature e prepara um único commit na branch principal."
+  },
+  {
+    "id": 5,
+    "question": "Qual comando você deve rodar caso deseje cancelar um processo de merge com problemas e voltar ao estado original?",
+    "options": [
+      "git merge --cancel",
+      "git undo merge",
+      "git merge --abort",
+      "git exit"
+    ],
+    "correct": 2,
+    "explanation": "O 'git merge --abort' restaura a árvore de trabalho e o repositório exatamente ao estado anterior ao início da operação de merge."
+  }
+]

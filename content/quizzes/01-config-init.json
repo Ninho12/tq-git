@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Qual comando é utilizado para inicializar um novo repositório Git em uma pasta local?",
+    "options": [
+      "git start",
+      "git init",
+      "git new",
+      "git create"
+    ],
+    "correct": 1,
+    "explanation": "O comando 'git init' cria um novo subdiretório .git na pasta atual, inicializando um repositório vazio."
+  },
+  {
+    "id": 2,
+    "question": "Como você configura seu nome de usuário globalmente no Git?",
+    "options": [
+      "git config --global user.name \"Seu Nome\"",
+      "git set-user \"Seu Nome\"",
+      "git user.name = \"Seu Nome\"",
+      "git profile --name \"Seu Nome\""
+    ],
+    "correct": 0,
+    "explanation": "A flag '--global' salva a configuração no arquivo ~/.gitconfig para todos os repositórios da sua máquina."
+  },
+  {
+    "id": 3,
+    "question": "Onde as configurações locais de um repositório específico (que sobrepõem as globais) são armazenadas?",
+    "options": [
+      "No diretório raiz do sistema operacional",
+      "Dentro da pasta oculta .git/config do repositório",
+      "No arquivo package.json",
+      "Na pasta temporária do usuário"
+    ],
+    "correct": 1,
+    "explanation": "As configurações locais ficam salvas em `.git/config` dentro do próprio repositório."
+  },
+  {
+    "id": 4,
+    "question": "Qual comando permite verificar o e-mail global configurado atualmente?",
+    "options": [
+      "git show email",
+      "git config user.email",
+      "git config --global user.email",
+      "git get-email"
+    ],
+    "correct": 2,
+    "explanation": "Executar 'git config --global user.email' retorna o e-mail gravado globalmente."
+  },
+  {
+    "id": 5,
+    "question": "O que o comando 'git clone <url>' faz além de baixar o código?",
+    "options": [
+      "Apenas faz o download dos arquivos compactados",
+      "Baixa o repositório remoto, cria o diretório local e já inicializa o vínculo (.git) com o remoto",
+      "Faz o deploy automático para um servidor de produção",
+      "Apaga o repositório remoto original"
+    ],
+    "correct": 1,
+    "explanation": "O 'git clone' copia todo o histórico, cria a pasta de trabalho e configura automaticamente o remote padrão chamado 'origin'."
+  }
+]

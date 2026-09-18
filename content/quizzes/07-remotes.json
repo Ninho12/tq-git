@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Qual é a convenção de nome padrão utilizada pelo Git para o primeiro repositório remoto adicionado?",
+    "options": [
+      "master",
+      "server",
+      "origin",
+      "upstream"
+    ],
+    "correct": 2,
+    "explanation": "Por padrão, o Git e o comando 'git clone' nomeiam o remote inicial principal de 'origin'."
+  },
+  {
+    "id": 2,
+    "question": "Qual é a principal diferença entre 'git fetch' e 'git pull'?",
+    "options": [
+      "O 'git fetch' é pago e o 'git pull' é gratuito",
+      "O 'git fetch' apenas faz o download das alterações sem alterar seus arquivos locais, enquanto 'git pull' baixa e faz o merge automaticamente",
+      "O 'git pull' envia código para a nuvem e 'git fetch' apaga arquivos",
+      "Eles são sinônimos exatos, não há nenhuma diferença"
+    ],
+    "correct": 1,
+    "explanation": "'git pull' executa um 'git fetch' seguido imediatamente por um 'git merge', modificando sua branch de trabalho."
+  },
+  {
+    "id": 3,
+    "question": "Para que serve o argumento '-u' (ou --set-upstream) no comando 'git push -u origin main'?",
+    "options": [
+      "Para fazer upload de arquivos descompactados",
+      "Para vincular a branch local à branch remota, permitindo usar apenas 'git push' nas próximas vezes",
+      "Para sobrescrever o histórico remoto com força total",
+      "Para desbloquear permissão de administrador no servidor"
+    ],
+    "correct": 1,
+    "explanation": "A flag '-u' estabelece o rastreamento (tracking) entre a branch local e a correspondente remota."
+  },
+  {
+    "id": 4,
+    "question": "Qual comando é utilizado para verificar a lista de remotes e suas URLs de fetch e push?",
+    "options": [
+      "git remote -v",
+      "git list --remotes",
+      "git server status",
+      "git config --remotes"
+    ],
+    "correct": 0,
+    "explanation": "O comando 'git remote -v' (verbose) exibe o nome e as URLs de leitura (fetch) e escrita (push) de cada remote."
+  },
+  {
+    "id": 5,
+    "question": "Como você pode excluir uma branch chamada 'feature-antiga' diretamente no servidor remoto?",
+    "options": [
+      "git remote remove feature-antiga",
+      "git push origin --delete feature-antiga",
+      "git clean --remote feature-antiga",
+      "git branch -d origin/feature-antiga"
+    ],
+    "correct": 1,
+    "explanation": "O comando 'git push origin --delete <branch>' envia a instrução para o remote eliminar a branch remota especificada."
+  }
+]

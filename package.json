@@ -1,0 +1,36 @@
+{
+  "name": "@ninho12/tq-git",
+  "version": "1.0.0",
+  "description": "CLI interativa para aprender Git do básico ao avançado com tutoriais em Markdown e quizzes em JSON",
+  "type": "module",
+  "bin": {
+    "tq-git": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "node ./bin/cli.js list"
+  },
+  "keywords": [
+    "git",
+    "cli",
+    "tutorial",
+    "quiz",
+    "terminal",
+    "interactive",
+    "learning",
+    "education"
+  ],
+  "author": "João Paulo Sena Padilha <joaopaulojpsp@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "boxen": "^7.1.1",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.20",
+    "marked": "^12.0.0",
+    "marked-terminal": "^7.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

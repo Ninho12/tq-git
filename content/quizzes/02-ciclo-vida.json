@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "O que significa dizer que um arquivo está no estado 'Untracked' no Git?",
+    "options": [
+      "O arquivo foi corrompido no repositório",
+      "O arquivo existe no diretório local, mas o Git ainda não o monitora nem gravou no histórico",
+      "O arquivo foi deletado do disco rígido",
+      "O arquivo está aguardando para ser enviado com git push"
+    ],
+    "correct": 1,
+    "explanation": "Arquivos 'Untracked' são arquivos novos presentes na pasta de trabalho que nunca foram adicionados via 'git add'."
+  },
+  {
+    "id": 2,
+    "question": "Qual comando move arquivos modificados do diretório de trabalho para a Staging Area?",
+    "options": [
+      "git stage --all",
+      "git push",
+      "git commit",
+      "git add"
+    ],
+    "correct": 3,
+    "explanation": "O comando 'git add' prepara os arquivos, transferindo o instantâneo atual para a Staging Area."
+  },
+  {
+    "id": 3,
+    "question": "Como verificar a diferença entre o que está preparado na Staging Area e o último commit realizado?",
+    "options": [
+      "git diff --staged (ou --cached)",
+      "git status -v",
+      "git diff --working",
+      "git log -p"
+    ],
+    "correct": 0,
+    "explanation": "A flag '--staged' (ou seu sinônimo '--cached') compara a Staging Area com o commit anterior apontado por HEAD."
+  },
+  {
+    "id": 4,
+    "question": "Para que serve o arquivo especial '.gitignore' em um projeto Git?",
+    "options": [
+      "Para listar desenvolvedores que não têm permissão de commit",
+      "Para especificar padrões de arquivos e pastas que o Git deve ignorar e não rastrear",
+      "Para bloquear comandos destrutivos como git reset",
+      "Para apagar automaticamente arquivos desnecessários"
+    ],
+    "correct": 1,
+    "explanation": "O '.gitignore' diz ao Git quais arquivos (como node_modules, .env e builds) não devem aparecer no git status nem ser versionados."
+  },
+  {
+    "id": 5,
+    "question": "Qual é a principal função da Staging Area (Index) no fluxo de trabalho do Git?",
+    "options": [
+      "Servir de servidor de backup em nuvem",
+      "Executar testes unitários automaticamente antes do commit",
+      "Permitir selecionar e agrupar com precisão as alterações que farão parte do próximo commit",
+      "Compactar os arquivos para economizar espaço em disco"
+    ],
+    "correct": 2,
+    "explanation": "A Staging Area dá controle granular ao desenvolvedor para compor commits atômicos e organizados."
+  }
+]

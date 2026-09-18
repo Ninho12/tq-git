@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Como o Git armazena internamente os dados de um commit?",
+    "options": [
+      "Apenas como uma lista de diferenças (diffs) em relação ao arquivo anterior",
+      "Como um instantâneo completo (snapshot) do estado de todos os arquivos do projeto",
+      "Em uma planilha de texto oculta na pasta raiz",
+      "Compactando o código em um arquivo .zip enviado para a nuvem"
+    ],
+    "correct": 1,
+    "explanation": "Diferente de sistemas legados de controle de versão, o Git grava uma árvore completa de snapshots do projeto a cada commit."
+  },
+  {
+    "id": 2,
+    "question": "O que identifica de forma única um commit no Git?",
+    "options": [
+      "Um número sequencial crescente (1, 2, 3...)",
+      "O nome da máquina onde o código foi editado",
+      "Um hash criptográfico (SHA-1 de 40 caracteres hexadecimais)",
+      "O endereço IP do desenvolvedor"
+    ],
+    "correct": 2,
+    "explanation": "O Git calcula um hash SHA-1 baseado no conteúdo dos arquivos, árvore, autor, data e commit pai."
+  },
+  {
+    "id": 3,
+    "question": "Qual comando exibe o histórico de commits de forma compacta, mostrando um commit por linha?",
+    "options": [
+      "git log --compact",
+      "git show --brief",
+      "git log --oneline",
+      "git history -1"
+    ],
+    "correct": 2,
+    "explanation": "A flag 'git log --oneline' resume cada commit em uma única linha com seu hash curto de 7 caracteres e o título da mensagem."
+  },
+  {
+    "id": 4,
+    "question": "O que a flag '-a' (ou -am) faz quando passada para o comando 'git commit'?",
+    "options": [
+      "Adiciona automaticamente todos os arquivos não rastreados (untracked)",
+      "Prepara e commita automaticamente modificações de arquivos já rastreados, sem precisar rodar git add antes",
+      "Altera o autor do commit para anônimo",
+      "Envia o commit direto para o repositório remoto"
+    ],
+    "correct": 1,
+    "explanation": "A flag '-a' prepara automaticamente arquivos rastreados que sofreram modificação ou deleção, dispensando o 'git add' prévio para eles."
+  },
+  {
+    "id": 5,
+    "question": "De acordo com o padrão Conventional Commits, qual prefixo é recomendado para um commit que corrige um defeito no software?",
+    "options": [
+      "feat:",
+      "chore:",
+      "refactor:",
+      "fix:"
+    ],
+    "correct": 3,
+    "explanation": "O prefixo 'fix:' é padronizado pelo Conventional Commits para identificar correções de bugs."
+  }
+]

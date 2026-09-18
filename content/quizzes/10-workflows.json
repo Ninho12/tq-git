@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "No modelo Gitflow, qual branch é criada diretamente a partir da 'main' para corrigir um erro crítico em produção com urgência?",
+    "options": [
+      "feature",
+      "develop",
+      "hotfix",
+      "release"
+    ],
+    "correct": 2,
+    "explanation": "Branches 'hotfix' são ramificadas diretamente da main para aplicar correções emergenciais em produção e depois mescladas na main e na develop."
+  },
+  {
+    "id": 2,
+    "question": "Qual é a premissa central do fluxo ágil GitHub Flow?",
+    "options": [
+      "O código na branch 'main' deve estar sempre estável e pronto para ser implantado em produção a qualquer momento",
+      "É proibido abrir Pull Requests para equipes pequenas",
+      "Todos os commits devem ser feitos diretamente na main sem branches secundárias",
+      "O ciclo de release deve durar obrigatoriamente 6 meses"
+    ],
+    "correct": 0,
+    "explanation": "No GitHub Flow, a main é sagrada e sempre pronta para deploy; todo trabalho novo nasce em branches descritivas que passam por PR."
+  },
+  {
+    "id": 3,
+    "question": "O que caracteriza a prática do Trunk-based Development?",
+    "options": [
+      "Trabalhar em branches isoladas por meses antes de integrar",
+      "Integrações frequentes e diárias no tronco principal com branches de vida curtíssima e uso de Feature Flags",
+      "Não utilizar testes automatizados",
+      "Excluir o repositório a cada sprint"
+    ],
+    "correct": 1,
+    "explanation": "No Trunk-based, o objetivo é evitar 'merge hell' integrando pequenas alterações constantemente no branch principal."
+  },
+  {
+    "id": 4,
+    "question": "De acordo com o Versionamento Semântico (SemVer: MAJOR.MINOR.PATCH), qual número deve ser incrementado ao lançar correções de bugs sem quebrar compatibilidade?",
+    "options": [
+      "MAJOR",
+      "MINOR",
+      "PATCH",
+      "BUILD"
+    ],
+    "correct": 2,
+    "explanation": "O incremento em PATCH (ex: de 1.0.0 para 1.0.1) indica correções retrocompatíveis de defeitos."
+  },
+  {
+    "id": 5,
+    "question": "Qual comando cria uma tag anotada 'v1.0.0' com uma mensagem descritiva no Git?",
+    "options": [
+      "git tag -a v1.0.0 -m \"Primeira versão estável\"",
+      "git create release v1.0.0",
+      "git label v1.0.0",
+      "git checkpoint v1.0.0"
+    ],
+    "correct": 0,
+    "explanation": "A flag '-a' cria uma tag anotada contendo autor, data e mensagem gravada como um objeto completo no Git."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "question": "Qual comando moderno remove um arquivo da Staging Area (desfazendo o git add) sem descartar suas edições no disco?",
+    "options": [
+      "git delete --staged <arquivo>",
+      "git restore --staged <arquivo>",
+      "git unstage <arquivo>",
+      "git remove <arquivo>"
+    ],
+    "correct": 1,
+    "explanation": "O 'git restore --staged <arquivo>' retira as modificações do palco (Index) mantendo o código intacto no diretório de trabalho."
+  },
+  {
+    "id": 2,
+    "question": "O que acontece ao executar 'git reset --soft HEAD~1'?",
+    "options": [
+      "O último commit é desfeito, mas todas as suas alterações permanecem intactas na Staging Area",
+      "Todos os arquivos do projeto são apagados do computador",
+      "O repositório é revertido para o primeiro commit da história",
+      "Cria um novo commit de reversão pública"
+    ],
+    "correct": 0,
+    "explanation": "No modo '--soft', apenas o ponteiro do HEAD volta 1 commit; os arquivos continuam preparados na Staging Area."
+  },
+  {
+    "id": 3,
+    "question": "Qual flag do comando 'git reset' descarta completamente tanto os commits quanto as alterações dos arquivos locais?",
+    "options": [
+      "--mixed",
+      "--soft",
+      "--hard",
+      "--force-all"
+    ],
+    "correct": 2,
+    "explanation": "A flag '--hard' sobrescreve a Staging Area e a Working Tree com o snapshot do commit de destino, descartando alterações não salvas."
+  },
+  {
+    "id": 4,
+    "question": "Por que o 'git revert' é a forma recomendada de desfazer commits que já foram enviados para branches remotas compartilhadas?",
+    "options": [
+      "Porque ele é mais rápido que os outros comandos",
+      "Porque ele não reescreve o passado, criando um novo commit com as alterações opostas sem quebrar o repositório dos colegas",
+      "Porque ele apaga o histórico do GitHub sem deixar rastros",
+      "Porque ele não exige permissão de escrita no repositório"
+    ],
+    "correct": 1,
+    "explanation": "'git revert' preserva a linearidade e a integridade da história compartilhada gerando um commit inverso."
+  },
+  {
+    "id": 5,
+    "question": "Para que serve o comando 'git reflog'?",
+    "options": [
+      "Para listar os arquivos compactados do repositório",
+      "Para registrar o histórico de movimentações do ponteiro HEAD na máquina local, permitindo recuperar commits perdidos",
+      "Para formatar o disco rígido",
+      "Para monitorar o tráfego de rede do git push"
+    ],
+    "correct": 1,
+    "explanation": "O 'reflog' é o diário de bordo local do Git; mesmo commits resetados ou deletados acidentalmente podem ser recuperados por ele."
+  }
+]
