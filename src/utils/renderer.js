@@ -1,10 +1,10 @@
 import { marked } from 'marked';
-import { MarkedTerminal } from 'marked-terminal';
+import { markedTerminal } from 'marked-terminal';
 import chalk from 'chalk';
 
-// Configure marked with terminal renderer
-marked.setOptions({
-  renderer: new MarkedTerminal({
+// Configure marked with markedTerminal extension
+marked.use(
+  markedTerminal({
     heading: chalk.bold.cyan,
     firstHeading: chalk.bold.yellow.underline,
     secondHeading: chalk.bold.magenta,
@@ -18,11 +18,11 @@ marked.setOptions({
       }
     }
   })
-});
+);
 
 export function renderMarkdown(content) {
   try {
-    return marked(content);
+    return marked.parse(content);
   } catch (err) {
     // Fallback in case of rendering glitch
     return content;

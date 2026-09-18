@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node ./bin/cli.js",
-    "test": "node ./bin/cli.js list"
+    "test": "node ./test/integrity.test.js"
   },
   "keywords": [
     "git",
